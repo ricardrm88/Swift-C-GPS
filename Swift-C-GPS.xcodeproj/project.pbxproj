@@ -11,8 +11,9 @@
 		0F4182F61DAEB3C400C070EE /* SwiftCGPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4182EB1DAEB3C300C070EE /* SwiftCGPS.framework */; };
 		0F4182FB1DAEB3C400C070EE /* Swift_C_GPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4182FA1DAEB3C400C070EE /* Swift_C_GPSTests.swift */; };
 		0F4377331DAEB99C00BE6A1D /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4377321DAEB99C00BE6A1D /* LocationController.swift */; };
+		0F46DB321DB03C4100BFA2A7 /* LocationCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F46DB301DB03C4100BFA2A7 /* LocationCpp.cpp */; };
 		0FF35D631DAED76400940B16 /* LocationObjCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF35D611DAED76400940B16 /* LocationObjCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FF35D641DAED76400940B16 /* LocationObjCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF35D621DAED76400940B16 /* LocationObjCWrapper.m */; };
+		0FF35D641DAED76400940B16 /* LocationObjCWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FF35D621DAED76400940B16 /* LocationObjCWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +34,10 @@
 		0F4182FA1DAEB3C400C070EE /* Swift_C_GPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_C_GPSTests.swift; sourceTree = "<group>"; };
 		0F4182FC1DAEB3C400C070EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4377321DAEB99C00BE6A1D /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		0F46DB2F1DB03BD200BFA2A7 /* LocationCpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationCpp.h; sourceTree = "<group>"; };
+		0F46DB301DB03C4100BFA2A7 /* LocationCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationCpp.cpp; sourceTree = "<group>"; };
 		0FF35D611DAED76400940B16 /* LocationObjCWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationObjCWrapper.h; sourceTree = "<group>"; };
-		0FF35D621DAED76400940B16 /* LocationObjCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationObjCWrapper.m; sourceTree = "<group>"; };
+		0FF35D621DAED76400940B16 /* LocationObjCWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LocationObjCWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				0FF35D611DAED76400940B16 /* LocationObjCWrapper.h */,
-				0FF35D621DAED76400940B16 /* LocationObjCWrapper.m */,
+				0FF35D621DAED76400940B16 /* LocationObjCWrapper.mm */,
 				0F4182EE1DAEB3C300C070EE /* SwiftCGPS.h */,
 				0F4182F01DAEB3C300C070EE /* Info.plist */,
 				0F4377321DAEB99C00BE6A1D /* LocationController.swift */,
+				0F46DB2F1DB03BD200BFA2A7 /* LocationCpp.h */,
+				0F46DB301DB03C4100BFA2A7 /* LocationCpp.cpp */,
 			);
 			path = "Swift-C-GPS";
 			sourceTree = "<group>";
@@ -204,7 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF35D641DAED76400940B16 /* LocationObjCWrapper.m in Sources */,
+				0FF35D641DAED76400940B16 /* LocationObjCWrapper.mm in Sources */,
+				0F46DB321DB03C4100BFA2A7 /* LocationCpp.cpp in Sources */,
 				0F4377331DAEB99C00BE6A1D /* LocationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
