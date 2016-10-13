@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Swift_C_GPS
+@testable import SwiftCGPS
 
 class Swift_C_GPSTests: XCTestCase {
     

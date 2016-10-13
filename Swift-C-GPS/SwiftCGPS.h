@@ -15,5 +15,4 @@ FOUNDATION_EXPORT double Swift_C_GPSVersionNumber;
 FOUNDATION_EXPORT const unsigned char Swift_C_GPSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Swift_C_GPS/PublicHeader.h>
-
-
+#import "LocationObjCWrapper.h"

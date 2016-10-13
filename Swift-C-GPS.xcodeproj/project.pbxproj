@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F4182EF1DAEB3C300C070EE /* Swift-C-GPS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4182EE1DAEB3C300C070EE /* Swift-C-GPS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F4182F61DAEB3C400C070EE /* Swift-C-GPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4182EB1DAEB3C300C070EE /* Swift-C-GPS.framework */; };
+		0F4182EF1DAEB3C300C070EE /* SwiftCGPS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4182EE1DAEB3C300C070EE /* SwiftCGPS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4182F61DAEB3C400C070EE /* SwiftCGPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4182EB1DAEB3C300C070EE /* SwiftCGPS.framework */; };
 		0F4182FB1DAEB3C400C070EE /* Swift_C_GPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4182FA1DAEB3C400C070EE /* Swift_C_GPSTests.swift */; };
+		0F4377331DAEB99C00BE6A1D /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4377321DAEB99C00BE6A1D /* LocationController.swift */; };
+		0FF35D631DAED76400940B16 /* LocationObjCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF35D611DAED76400940B16 /* LocationObjCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FF35D641DAED76400940B16 /* LocationObjCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF35D621DAED76400940B16 /* LocationObjCWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F4182EB1DAEB3C300C070EE /* Swift-C-GPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Swift-C-GPS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F4182EE1DAEB3C300C070EE /* Swift-C-GPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-C-GPS.h"; sourceTree = "<group>"; };
+		0F4182EB1DAEB3C300C070EE /* SwiftCGPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCGPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4182EE1DAEB3C300C070EE /* SwiftCGPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCGPS.h; sourceTree = "<group>"; };
 		0F4182F01DAEB3C300C070EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F4182F51DAEB3C400C070EE /* Swift-C-GPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-C-GPSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4182F51DAEB3C400C070EE /* SwiftCGPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCGPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4182FA1DAEB3C400C070EE /* Swift_C_GPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_C_GPSTests.swift; sourceTree = "<group>"; };
 		0F4182FC1DAEB3C400C070EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4377321DAEB99C00BE6A1D /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		0FF35D611DAED76400940B16 /* LocationObjCWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationObjCWrapper.h; sourceTree = "<group>"; };
+		0FF35D621DAED76400940B16 /* LocationObjCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationObjCWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4182F61DAEB3C400C070EE /* Swift-C-GPS.framework in Frameworks */,
+				0F4182F61DAEB3C400C070EE /* SwiftCGPS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +68,8 @@
 		0F4182EC1DAEB3C300C070EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F4182EB1DAEB3C300C070EE /* Swift-C-GPS.framework */,
-				0F4182F51DAEB3C400C070EE /* Swift-C-GPSTests.xctest */,
+				0F4182EB1DAEB3C300C070EE /* SwiftCGPS.framework */,
+				0F4182F51DAEB3C400C070EE /* SwiftCGPSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +77,11 @@
 		0F4182ED1DAEB3C300C070EE /* Swift-C-GPS */ = {
 			isa = PBXGroup;
 			children = (
-				0F4182EE1DAEB3C300C070EE /* Swift-C-GPS.h */,
+				0FF35D611DAED76400940B16 /* LocationObjCWrapper.h */,
+				0FF35D621DAED76400940B16 /* LocationObjCWrapper.m */,
+				0F4182EE1DAEB3C300C070EE /* SwiftCGPS.h */,
 				0F4182F01DAEB3C300C070EE /* Info.plist */,
+				0F4377321DAEB99C00BE6A1D /* LocationController.swift */,
 			);
 			path = "Swift-C-GPS";
 			sourceTree = "<group>";
@@ -93,16 +102,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4182EF1DAEB3C300C070EE /* Swift-C-GPS.h in Headers */,
+				0F4182EF1DAEB3C300C070EE /* SwiftCGPS.h in Headers */,
+				0FF35D631DAED76400940B16 /* LocationObjCWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0F4182EA1DAEB3C300C070EE /* Swift-C-GPS */ = {
+		0F4182EA1DAEB3C300C070EE /* SwiftCGPS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F4182FF1DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "Swift-C-GPS" */;
+			buildConfigurationList = 0F4182FF1DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "SwiftCGPS" */;
 			buildPhases = (
 				0F4182E61DAEB3C300C070EE /* Sources */,
 				0F4182E71DAEB3C300C070EE /* Frameworks */,
@@ -113,14 +123,14 @@
 			);
 			dependencies = (
 			);
-			name = "Swift-C-GPS";
+			name = SwiftCGPS;
 			productName = "Swift-C-GPS";
-			productReference = 0F4182EB1DAEB3C300C070EE /* Swift-C-GPS.framework */;
+			productReference = 0F4182EB1DAEB3C300C070EE /* SwiftCGPS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0F4182F41DAEB3C400C070EE /* Swift-C-GPSTests */ = {
+		0F4182F41DAEB3C400C070EE /* SwiftCGPSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F4183021DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "Swift-C-GPSTests" */;
+			buildConfigurationList = 0F4183021DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "SwiftCGPSTests" */;
 			buildPhases = (
 				0F4182F11DAEB3C400C070EE /* Sources */,
 				0F4182F21DAEB3C400C070EE /* Frameworks */,
@@ -131,9 +141,9 @@
 			dependencies = (
 				0F4182F81DAEB3C400C070EE /* PBXTargetDependency */,
 			);
-			name = "Swift-C-GPSTests";
+			name = SwiftCGPSTests;
 			productName = "Swift-C-GPSTests";
-			productReference = 0F4182F51DAEB3C400C070EE /* Swift-C-GPSTests.xctest */;
+			productReference = 0F4182F51DAEB3C400C070EE /* SwiftCGPSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,8 +176,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F4182EA1DAEB3C300C070EE /* Swift-C-GPS */,
-				0F4182F41DAEB3C400C070EE /* Swift-C-GPSTests */,
+				0F4182EA1DAEB3C300C070EE /* SwiftCGPS */,
+				0F4182F41DAEB3C400C070EE /* SwiftCGPSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF35D641DAED76400940B16 /* LocationObjCWrapper.m in Sources */,
+				0F4377331DAEB99C00BE6A1D /* LocationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +222,7 @@
 /* Begin PBXTargetDependency section */
 		0F4182F81DAEB3C400C070EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0F4182EA1DAEB3C300C070EE /* Swift-C-GPS */;
+			target = 0F4182EA1DAEB3C300C070EE /* SwiftCGPS */;
 			targetProxy = 0F4182F71DAEB3C400C070EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -238,6 +250,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -287,6 +300,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -310,6 +324,7 @@
 		0F4183001DAEB3C400C070EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,15 +332,17 @@
 				INFOPLIST_FILE = "Swift-C-GPS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ricard.Swift-C-GPS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricard.swiftcgps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0F4183011DAEB3C400C070EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -333,7 +350,7 @@
 				INFOPLIST_FILE = "Swift-C-GPS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ricard.Swift-C-GPS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricard.swiftcgps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -371,21 +388,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F4182FF1DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "Swift-C-GPS" */ = {
+		0F4182FF1DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "SwiftCGPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F4183001DAEB3C400C070EE /* Debug */,
 				0F4183011DAEB3C400C070EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		0F4183021DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "Swift-C-GPSTests" */ = {
+		0F4183021DAEB3C400C070EE /* Build configuration list for PBXNativeTarget "SwiftCGPSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F4183031DAEB3C400C070EE /* Debug */,
 				0F4183041DAEB3C400C070EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
